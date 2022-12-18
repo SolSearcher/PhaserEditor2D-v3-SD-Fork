@@ -195,6 +195,7 @@ namespace colibri.ui.ide {
 
         static async uploadFile_async(uploadFolder: io.FilePath, file: File) {
 
+            console.log("uploading file")
             const storage = Workbench.getWorkbench().getFileStorage();
 
             return storage.uploadFile(uploadFolder, file);

@@ -61,6 +61,14 @@ Phaser Editor 2D Core allows running the server with a different client. It is w
 $ npx phasereditor2d-launcher -editor . -dev -disable-plugins phasereditor2d.code -project path/to/game
 ```
 
+$ npx phasereditor2d-launcher -editor . -project C:\Workspace\SimpleDuck\Simple_Duck_Phaser_3\sd_phaser3_template_js
+
+C:\Workspace\SimpleDuck\PhaserEditor2D-v3-SD-Fork\source\editor
+
+npx phasereditor2d-launcher -editor C:\Workspace\SimpleDuck\PhaserEditor2D-v3-SD-Fork\source\editor -project C:\Workspace\SimpleDuck\Simple_Duck_Phaser_3\sd_phaser3_template_js
+
+
+
 The [phasereditor2d-launcher](https://www.npmjs.com/package/phasereditor2d-launcher) is a cli-based node module. It launches the latest version of Phaser Editor 2D Core.
 
 The `-editor` option configures a new location of the client code.

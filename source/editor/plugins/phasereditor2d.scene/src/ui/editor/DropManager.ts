@@ -57,6 +57,7 @@ namespace phasereditor2d.scene.ui.editor {
 
         async dropData(dataArray: any[], offsetX: number, offsetY: number) {
 
+            console.log("dropData")
             await this._editor.getUndoManager()
                 .add(new undo.CreateObjectWithAssetOperation(this._editor, dataArray, offsetX, offsetY));
 

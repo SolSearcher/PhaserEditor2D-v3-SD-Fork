@@ -32,12 +32,12 @@ namespace phasereditor2d.files.ui.views {
             const label = folder.getLabelFromContent(this);
 
             for (const section of TAB_SECTIONS) {
-
+                console.log("tab section added")
                 folder.addTabSection(label, section, this.getId());
             }
 
             folder.eventTabSectionSelected.addListener(async (section: string) => {
-
+                console.log('clicked on a tab section : ' + section)
                 const provider = section ? new FilteredContentProvider(section)
                     : new viewers.FileTreeContentProvider();
 

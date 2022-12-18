@@ -89,6 +89,7 @@ namespace colibri.ui.controls {
 
         getText() {
             return this._text;
+            
         }
 
         getTooltip() {

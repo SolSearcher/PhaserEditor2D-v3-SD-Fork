@@ -164,7 +164,7 @@ namespace colibri.ui.controls.viewers {
         }
 
         private onDragStart(e: DragEvent) {
-
+            console.log(e)
             const paintItemUnderCursor = this.getPaintItemAt(e);
 
             if (paintItemUnderCursor) {

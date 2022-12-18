@@ -16,6 +16,7 @@ namespace phasereditor2d.files.ui.dialogs {
 
         async create() {
 
+            console.log("making viewer!!")
             const filesViewer = this.getViewer();
             filesViewer.setLabelProvider(new viewers.InputFileLabelProvider());
             filesViewer.setCellRendererProvider(new viewers.InputFileCellRendererProvider());
@@ -36,16 +37,19 @@ namespace phasereditor2d.files.ui.dialogs {
             });
 
             dropArea.addEventListener("dragenter", e => {
-
+                console.log('drag enter')
+                console.log(dropArea.classList)
                 dropArea.classList.add("FilesDragEnter");
             });
 
             dropArea.addEventListener("dragleave", e => {
+                console.log('drag leave')
 
                 dropArea.classList.remove("FilesDragEnter");
             });
 
             filesViewer.getElement().addEventListener("drop", e => {
+                console.log('drop')
 
                 dropArea.classList.remove("FilesDragEnter");
                 this.prepareFilesForUpload(e.dataTransfer.files);
